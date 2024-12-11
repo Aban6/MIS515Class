@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 20vh 1fr 1fr;
+            min-height: 100vh;
+        }
+        .grid-container > * {
+            border: 1px solid black; 
+        }
+        header {
+            background-color: blanchedalmond;
+            grid-column: span 3;
+            /* display: flex; 
+            justify-content:center;  */
+        }
+         .links {
+            display: flex;
+        }
+        .links > * {
+            list-style-type: none;
+            border: 1px solid green;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        .links-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .link {
+            font-size: 1em;
+            padding: 1em;
+        }
+        .middle-content{
+            grid-row: span 2;
+        }
+        #sayulita-pic {
+            background-image: url('./images/sayulita.jpg');
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+        } 
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>Welcome to my site</h1>
+            <div class="links-container">
+                <ul class="links">
+                    <li>
+                        <a class="link" href="https://www.sdsu.edu/">SDSU</a>
+                    </li>
+                    <li>
+                        <a class= "link" href="https://www.sdsu.edu/">SDSU</a>
+    
+                    </li>
+                </ul>
+                <ul class="links">
+                    <li>
+                        <a class="link" href="https://www.sdsu.edu/">SDSU</a>
+                    </li>
+                    <li>
+                        <a class= "link" href="https://www.sdsu.edu/">SDSU</a>
+    
+                    </li>
+                    <li>
+                        <a  class="link" href="https://www.sdsu.edu/">SDSU</a>
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+        <!-- <div>X</div> -->
+        <!-- <div>X</div>
+        <div>X</div> -->
+        <div id="sayulita-pic">
+            <img src="./images/sayulita.jpg" alt="">
+        </div>
+        <div class="middle-content">C</div>
+        <!-- <div>X</div> -->
+        <div>X</div>
+        <div>X</div>
+        <div>X</div>
+    </div>
+</body>
+</html>
